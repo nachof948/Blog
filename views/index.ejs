@@ -1,0 +1,13 @@
+<div class="author">
+    <h1 class="author_heading">Bienvenidos a mi pagina web sobre noticias</h1>
+    <p class="author_body">Pagina creada con NODE JS</p>
+</div>
+<ul>
+    <% posts.forEach(post=> { %>
+        <li>
+            <a href=""><%= post.titulo %></a>
+            <span><%=post.fechaCreacion%></span>
+        </li>
+    <% }); %>
+    
+</ul>
